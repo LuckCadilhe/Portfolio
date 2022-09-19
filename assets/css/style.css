@@ -1,0 +1,109 @@
+:root{
+    --cor-branca: #FFFFFF;
+    --cor-cinza: #626567;
+    --cor-preto: #000000;
+    --cor-verde: #99D251;
+    --cor-verde-escuro: #23650B;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter';
+}
+
+.container__inicio {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 36px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.container__inicio a {
+    padding: 0px 70px;
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
+}
+.container__inicio a:hover {
+    color: var(--cor-preto);
+}
+hr.rounded {
+    border: 1px solid #23650B;
+    color: var(--cor-verde-escuro);
+    backdrop-filter: blur(2px);
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container__texto li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+#lista1 {
+    color: var(--cor-cinza);
+    font-size: 60px;
+    font-weight: bold;
+}
+#lista2 {
+    color: var(--cor-verde-escuro);
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.container__imagem {
+    border-radius: 78px;
+    box-shadow: 5px 5px 2px 0px var(--cor-cinza);
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    width: 120px;
+    margin-left: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--cor-verde);
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+button:hover {
+    box-shadow: 0 0 40px 40px var(--cor-verde-escuro) inset;
+}
+
+.container__sobre {
+    display:block;
+    align-items: center;
+}
+.texto__sobre {
+    text-align: end;
+}
+
+.sobre {
+    padding-bottom: 60px;
+}
+.rounded__sobre {
+    width: 120px;
+    margin-left: 600px;
+    border: 1px solid #23650B;
+    color: var(--cor-verde-escuro);
+    backdrop-filter: blur(2px);
+    margin-bottom: 20px;
+}
