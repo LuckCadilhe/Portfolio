@@ -23,11 +23,11 @@
             <div class="container__texto">
                 <li id="lista1">Lucas Cadilhe</li>
                 <li id="lista2">Front-End Developer</li>
-                <button>Download CV</button>
+                <button id="download-pdf">Download CV</button>
             </div>
             <div><img class="container__imagem" src="./assets/img/perfil.jpeg" alt="Imagem Perfil Lucas" height="447px"></div>
         </article>
-        <section id="aboute-me" class="container">
+        <section id="aboute-me" class="container" data-anime="left">
             <div ><img class="container__imagem" src="./assets/img/perfil2.jpeg" alt="imagem about me" height="400px"></div>
             <div class="container__sobre">
                 <div class="sobre">
@@ -40,19 +40,19 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="container">
+        <section id="portfolio" class="container" data-anime="left">
             <div class="portfolio__texto">
                 <h1>Portfolio</h1>
                 <hr class="rounded__portfolio">
             </div>
         </section>
-        <section>
+        <section data-anime="left">
             <div class="portfolio__estudos">
                 <h1>Studies</h1>
                 <hr class="rounded__estudos">
             </div>
         </section>
-        <section class="container">
+        <section class="container" data-anime="right">
             <ul>
                 <li>
                     <a href="#" class="imagem__estudos">
@@ -78,13 +78,13 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section data-anime="left">
             <div class="portfolio__estudos">
                 <h1>Project</h1>
                 <hr class="rounded__estudos">
             </div>
         </section>
-        <section class="container">
+        <section class="container" data-anime="right">
             <ul>
                 <li>
                     <a href="#" class="imagem__estudos">
@@ -112,7 +112,7 @@
         </section>
     </main>
     <footer>
-        <article id="contact" class="container__contato">
+        <article id="contact" class="container__contato" data-anime="left">
             <div>
                 <div class="contact__texto">
                     <h1>Contact</h1>
@@ -127,9 +127,9 @@
                 </div>
                 <div>
                     <ul class="container__social">
-                        <li><a href="#" target="_blank" title="instagram"><img src="./assets/img/instagram.png" alt="imagem instagram" width="40px"></a></li>
-                        <li><a href="#" target="_blank" title="github"><img src="./assets/img/github.png" alt="imagem github" width="40px"></a></li>
-                        <li><a href="#" target="_blank" title="linkdin"><img src="./assets/img/linkedin.png" alt="imagem linkedin" width="40px"></a></li>
+                        <li><a href="https://www.instagram.com/lucascadilhe/" target="_blank" title="instagram"><img src="./assets/img/instagram.png" alt="imagem instagram" width="40px"></a></li>
+                        <li><a href="https://github.com/LuckCadilhe" target="_blank" title="github"><img src="./assets/img/github.png" alt="imagem github" width="40px"></a></li>
+                        <li><a href="https://www.linkedin.com/in/lucas-cadilhe/" target="_blank" title="linkdin"><img src="./assets/img/linkedin.png" alt="imagem linkedin" width="40px"></a></li>
                     </ul>
                 </div>
         </article>
@@ -139,4 +139,5 @@
     </footer>
 </body>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/downloadPdf.js"></script>
 </html>

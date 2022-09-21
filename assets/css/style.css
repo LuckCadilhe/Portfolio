@@ -1,5 +1,6 @@
 :root{
-    --cor-branca: #FFFFFF;
+    --cor-brancao:#ffffff;
+    --cor-branca: #ADB7C9;
     --cor-cinza: #626567;
     --cor-preto: #000000;
     --cor-verde: #99D251;
@@ -11,6 +12,7 @@
 }
 body {
     font-family: 'Inter';
+    background-color: #262C36;
 }
 h1{
     text-transform: uppercase;
@@ -30,7 +32,7 @@ li{
 .container__inicio a {
     padding: 0px 70px;
     text-decoration: none;
-    color: var(--cor-cinza);
+    color: var(--cor-branca);
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
@@ -40,7 +42,7 @@ li{
     color: var(--cor-preto);
 }
 hr.rounded {
-    border: 1px solid #23650B;
+    border: 1px solid var(--cor-preto);
     color: var(--cor-verde-escuro);
     backdrop-filter: blur(2px);
     margin-bottom: 20px;
@@ -52,6 +54,7 @@ hr.rounded {
     justify-content:space-evenly;
     padding-top: 50px;
     margin-bottom: 50px;
+    color: var(--cor-branca);
 }
 
 .container__texto li{
@@ -60,12 +63,12 @@ hr.rounded {
 }
 
 #lista1 {
-    color: var(--cor-cinza);
+    color: var(--cor-brancao);
     font-size: 60px;
     font-weight: bold;
 }
 #lista2 {
-    color: var(--cor-verde-escuro);
+    color: var(--cor-branca);
     font-size: 30px;
     font-weight: bold;
     padding-left: 50px;
@@ -73,7 +76,7 @@ hr.rounded {
 
 .container__imagem {
     border-radius: 78px;
-    box-shadow: 5px 5px 2px 0px var(--cor-cinza);
+    box-shadow: 5px 5px 10px 0px var(--cor-preto);
 }
 
 button {
@@ -85,12 +88,12 @@ button {
     margin-left: 150px;
     margin-top: 10px;
     border-radius: 10px;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-cinza);
     cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 button:hover {
-    box-shadow: 0 0 40px 40px var(--cor-verde-escuro) inset;
+    box-shadow: 0 0 40px 40px var(--cor-branca) inset;
 }
 
 .container__sobre {
@@ -99,6 +102,7 @@ button:hover {
 }
 .texto__sobre {
     text-align: end;
+    color: var(--cor-branca);
 }
 
 .sobre {
@@ -108,24 +112,24 @@ button:hover {
 .sobre__texto {
     text-align: center;
     font-size: 20px;
+    color: var(--cor-brancao);
 }
 .rounded__sobre {
     width: 120px;
     margin-left: 600px;
-    border: 1px solid #23650B;
-    color: var(--cor-verde-escuro);
+    border: 1px solid var(--cor-preto);
     backdrop-filter: blur(2px);
     margin-bottom: 20px;
 }
 .portfolio__texto {
     text-align: center;
     font-size: 20px;
+    color: var(--cor-branca);
 }
 .rounded__portfolio {
     width: 120px;
     margin-left: 50px;
-    border: 1px solid #23650B;
-    color: var(--cor-verde-escuro);
+    border: 1px solid var(--cor-preto);
     backdrop-filter: blur(2px);
     margin-bottom: 20px;
 }
@@ -134,13 +138,13 @@ button:hover {
     text-align: start;
     font-size: 15px;
     margin-left: 100px;
+    color: var(--cor-branca);
 }
 
 .rounded__estudos {
     width: 100px;
     margin-left: 20px;
-    border: 1px solid #23650B;
-    color: var(--cor-verde-escuro);
+    border: 1px solid var(--cor-preto);
     backdrop-filter: blur(2px);
     margin-bottom: 20px;
 }
@@ -157,7 +161,7 @@ button:hover {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     border-radius: 10%;
-    box-shadow: 5px 5px 3px 0px var(--cor-cinza);
+    box-shadow: 5px 5px 10px 0px var(--cor-preto);
    }
    li img:hover {
     -webkit-transform: scale(1.0);
@@ -173,12 +177,12 @@ li p {
 .contact__texto {
     text-align: center;
     font-size: 20px;
+    color: var(--cor-branca);
 }
 .rounded__contact {
     width: 120px;
     margin-left: 50px;
-    border: 1px solid #23650B;
-    color: var(--cor-verde-escuro);
+    border: 1px solid var(--cor-preto);
     backdrop-filter: blur(2px);
     margin-bottom: 20px;
 }
@@ -195,8 +199,8 @@ li p {
     text-align: center;
     margin: 70px;
     padding: 50px;
-    background-color: var(--cor-verde-escuro);
-
+    background-color: var(--cor-cinza);
+    box-shadow: 5px 5px 10px 0px var(--cor-preto);
 }
 .container__descricao {
     margin-top: 20px;
@@ -207,3 +211,26 @@ li p {
     justify-items: baseline;
     width: 50px;
 }
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* Responsive */
+
