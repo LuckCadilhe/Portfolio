@@ -42,6 +42,7 @@ li{
     color: var(--cor-preto);
 }
 hr.rounded {
+    width: 100%;
     border: 1px solid var(--cor-preto);
     color: var(--cor-verde-escuro);
     backdrop-filter: blur(2px);
@@ -53,8 +54,10 @@ hr.rounded {
     align-items: center;
     justify-content:space-evenly;
     padding-top: 50px;
+    margin-left: 50px;
     margin-bottom: 50px;
     color: var(--cor-branca);
+    max-width: 1200px;
 }
 
 .container__texto li{
@@ -234,3 +237,20 @@ li p {
 
 /* Responsive */
 
+@media screen and (max-width: 500px){
+    .container__inicio{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container, button, #lista1, #lista2, .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .rounded__sobre {
+        margin:auto;
+    }
+}
