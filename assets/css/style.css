@@ -237,12 +237,12 @@ li p {
 
 /* Responsive */
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
     .container__inicio{
         display: flex;
         flex-wrap: wrap;
     }
-    .container, button, #lista1, #lista2, .sobre{
+    .container, button, #lista1, #lista2, .sobre, p{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -252,5 +252,8 @@ li p {
     }
     .rounded__sobre {
         margin:auto;
+    }
+    .container__social {
+        width: auto;
     }
 }
