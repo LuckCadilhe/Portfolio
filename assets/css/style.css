@@ -26,8 +26,9 @@ li{
     justify-items: center;
     justify-content: center;
     list-style: none;
-    padding-top: 36px;
+    padding-top: 20px;
     padding-bottom: 10px;
+    background-color: #262C36;
 }
 .container__inicio a {
     padding: 0px 70px;
