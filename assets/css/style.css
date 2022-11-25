@@ -54,13 +54,12 @@ hr.rounded {
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    padding-top: 50px;
+    padding-top: 100px;
     margin-left: 50px;
     margin-bottom: 50px;
     color: var(--cor-branca);
     max-width: 1200px;
 }
-
 .container__texto li{
     margin-bottom: 20px;
     list-style: none;
@@ -92,12 +91,12 @@ button {
     margin-left: 150px;
     margin-top: 10px;
     border-radius: 10px;
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-branca);
     cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 button:hover {
-    box-shadow: 0 0 40px 40px var(--cor-branca) inset;
+    box-shadow: 0 0 40px 40px var(--cor-cinza) inset;
 }
 
 .container__sobre {
@@ -202,7 +201,6 @@ li p {
     border-radius: 20px;
     text-align: center;
     margin: 70px;
-    padding: 50px;
     background-color: var(--cor-cinza);
     box-shadow: 5px 5px 10px 0px var(--cor-preto);
 }
@@ -213,7 +211,6 @@ li p {
     display: flex;
     align-items: center;
     justify-items: baseline;
-    width: 50px;
 }
 
 /* Animação */
