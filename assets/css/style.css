@@ -240,13 +240,21 @@ li p {
         display: flex;
         flex-wrap: wrap;
     }
-    .container, button, #lista1, #lista2, .sobre, p{
+    .container, #lista1, #lista2, .sobre, p{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin: auto;
-        padding-bottom: 20px;
+        padding: 20px;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
     }
     .rounded__sobre {
         margin:auto;
